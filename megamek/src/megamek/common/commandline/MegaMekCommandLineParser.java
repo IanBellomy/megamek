@@ -427,6 +427,8 @@ public class MegaMekCommandLineParser extends AbstractCommandLineParser {
                     if (!officialUnitList) {
                         bw.write(unitType);
                         bw.write(",");
+                        bw.write(unit.getMulId());
+                        bw.write(",");
                         bw.write(unit.getUnitSubType());
                         bw.write(",");
                         bw.write(unit.getChassis());
